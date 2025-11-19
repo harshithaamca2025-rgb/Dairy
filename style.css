@@ -1,0 +1,102 @@
+ body {
+      font-family: Arial, sans-serif;
+      background:yellow;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @keyframes bgShift {
+        0%   { background-position: 0% 50%; filter: hue-rotate(0deg); }
+        50%  { background-position: 100% 50%; filter: hue-rotate(12deg); }
+        100% { background-position: 0% 50%; filter: hue-rotate(0deg); }
+    }
+    @keyframes levitate {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-4px); }
+        100% { transform: translateY(0); }
+    }
+
+    /* Apply a subtle animated background + gentle float to every element */
+    * {
+        background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,248,255,0.8));
+        background-size: 200% 200%;
+        animation: bgShift 12s ease-in-out infinite, levitate 6s ease-in-out infinite;
+        color: #799a33;
+        border-radius: 6px;
+        transition: transform .18s ease, box-shadow .18s ease, background .3s ease;
+        box-shadow: 0 1px 3px rgba(221, 79, 18, 0.05);
+    }
+
+    /* Hover pop for interactive feel */
+    *:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(11, 55, 143, 0.08);
+    }
+
+    /* Slightly different accented backgrounds for common inline/semantic elements */
+    a {
+        background: linear-gradient(90deg, #e6f3ff, #fff7e6);
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: #0456b3;
+        text-decoration: none;
+    }
+    code, pre {
+        background: linear-gradient(90deg, #ec1c76, #b71a1a);
+        padding: 6px 8px;
+        border-radius: 6px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+    }
+    h1 {
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #c8e127;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #007bff;
+      color: rgb(220, 24, 132);
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      width: 300px;
+    }
+
+    li {
+      background: rgb(232, 5, 5);
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .delete {
+      background-color: #dc3545;
+    }
+
+    .delete:hover {
+      background-color: #a71d2a;
+    }
