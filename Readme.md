@@ -2,6 +2,8 @@
 
 A simple and stylish My Digital Diary built with HTML, CSS, and JavaScript.  
 Users can add and delete tasks with smooth interactivity and a clean UI.
+<h2>live link of project</h2>
+<b>https://harshithaamca2025-rgb.github.io/Dairy/</b>
 <h1> ScreenShot of my Project</h1>
 <img src="https://github.com/harshithaamca2025-rgb/Dairy/blob/main/Screenshot%202025-11-19%20144932.png?raw=true">
 ## 🔥 Features
